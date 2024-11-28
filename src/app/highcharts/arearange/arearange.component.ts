@@ -1,85 +1,107 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
+import { Options } from 'highcharts';
+import HighchartsData from 'highcharts/modules/data';
+import DataModule from 'highcharts/modules/data';
+import HighchartsExporting from 'highcharts/modules/exporting';
 
+HighchartsData(Highcharts);
+
+// Initialize modules
+DataModule(Highcharts);
+HighchartsExporting(Highcharts);
 @Component({
   selector: 'app-arearange',
   templateUrl: './arearange.component.html',
   styleUrl: './arearange.component.css'
 })
-export class ArearangeComponent{
-constructor(){
+export class ArearangeComponent implements OnInit{
+    Highcharts: typeof Highcharts = Highcharts; // Assign the Highcharts library
+    chartOptions: Highcharts.Options = {}; // Chart options
+  
+    constructor() {}
+  
+    ngOnInit(): void {
+      this.chartOptions = {
+        chart: {
+          type: 'bar',
+        },
+        title: {
+          text: 'Historic World Population by Region',
+          align: 'left',
+        },
+        subtitle: {
+          text:
+            'Source: <a href="https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population" target="_blank">Wikipedia.org</a>',
+          align: 'left',
+        },
+        xAxis: {
+          categories: ['Africa', 'America', 'Asia', 'Europe'],
+          title: {
+            text: null,
+          },
+          gridLineWidth: 1,
+          lineWidth: 0,
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: 'Population (millions)',
+            align: 'high',
+          },
+          labels: {
+            overflow: 'justify',
+          },
+          gridLineWidth: 0,
+        },
+        tooltip: {
+          valueSuffix: ' millions',
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 50, // Rounded corners in TypeScript
+            dataLabels: {
+              enabled: true,
+            },
+            groupPadding: 0.1,
+          },
+        },
+        legend: {
+          layout: 'vertical',
+          align: 'right',
+          verticalAlign: 'top',
+          x: -40,
+          y: 80,
+          floating: true,
+          borderWidth: 1,
+          backgroundColor:
+            Highcharts.defaultOptions.legend?.backgroundColor || '#FFFFFF',
+          shadow: true,
+        },
+        credits: {
+          enabled: false,
+        },
+        series: [
+          {
+            type: 'bar', // Define the series type explicitly
+            name: 'Year 1990',
+            data: [632, 727, 3202, 721],
+          },
+          {
+            type: 'bar',
+            name: 'Year 2000',
+            data: [814, 841, 3714, 726],
+          },
+          {
+            type: 'bar',
+            name: 'Year 2021',
+            data: [1393, 1031, 4695, 745],
+          },
+        ],
+      };
+    }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const chartOptions: Highcharts.Options = {
-            data: {
-                csvURL: 'https://cdn.jsdelivr.net/gh/highcharts/highcharts@b99fc27c/samples/data/temp-florida-bergen-2023.csv',
-                beforeParse: function (csv) {
-                    return csv.replace(/\n\n/g, '\n');
-                }
-            },
-            chart: {
-                type: 'arearange',
-                panning: {
-                    enabled: true,
-                    type: 'xy' // Use 'xy' to enable panning in both horizontal and vertical directions
-                },
-                scrollablePlotArea: {
-                    minWidth: 600,
-                    scrollPositionX: 1
-                }
-            },
-            title: {
-                text: 'Temperature variation by day',
-                align: 'left'
-            },
-            subtitle: {
-                text: 'Source: ' +
-                    '<a href="https://veret.gfi.uib.no/" target="_blank">Universitetet i Bergen</a>',
-                align: 'left'
-            },
-            xAxis: {
-                type: 'datetime',
-                accessibility: {
-                    rangeDescription: 'Range: Jan 1st 2023 to Jan 1st 2024.'
-                }
-            },
-            yAxis: {
-                title: {
-                    text: null
-                }
-            },
-            tooltip: {
-                // crosshairs: true,
-                shared: true,
-                valueSuffix: '°C',
-                xDateFormat: '%A, %b %e'
-            },
-            legend: {
-                enabled: false
-            },
-            series: [{
-                type:'area',
-                name: 'Temperatures',
-                color: {
-                    linearGradient: {
-                        x1: 0,
-                        x2: 0,
-                        y1: 0,
-                        y2: 1
-                    },
-                    stops: [
-                        [0, '#ff0000'],
-                        [1, '#0000ff']
-                    ]
-                }
-            }]
-        };
-    
-        // Initialize the Highcharts chart with the options
-        Highcharts.chart('container', chartOptions);
-    });
-    
-    
-      
-}
-}
+
+  }
+  
+

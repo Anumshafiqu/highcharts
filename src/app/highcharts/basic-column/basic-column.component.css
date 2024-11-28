@@ -1,12 +1,12 @@
-.highcharts-figure,
-.highcharts-data-table table {
-    min-width: 310px;
-    max-width: 500px;
-    margin: 1em auto;
+#container {
+    height: 500px;
 }
 
-#container {
-    height: 400px;
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 900px;
+    margin: 1em auto;
 }
 
 .highcharts-data-table table {
@@ -48,4 +48,3 @@
 .highcharts-description {
     margin: 0.3rem 10px;
 }
-
