@@ -31,6 +31,19 @@ import { StackedPercentageColumnComponent } from './highcharts/stacked-percentag
 import { DrilldownComponent } from './highcharts/drilldown/drilldown.component';
 import { PieComponent } from './highcharts/pie/pie.component';
 import { PieChartComponent } from './highcharts/pie-chart/pie-chart.component';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { PieDrilldownComponent } from './pie-drilldown/pie-drilldown.component';
+import { PieLegendComponent } from './pie-legend/pie-legend.component';
+import { PieGradientComponent } from './highcharts/pie-gradient/pie-gradient.component';
+import { RadiusPieComponent } from './highcharts/radius-pie/radius-pie.component';
+import { CirclePieComponent } from './highcharts/circle-pie/circle-pie.component';
+import { DonutChartsComponent } from './highcharts/donut-charts/donut-charts.component';
+import { BubbleChartsComponent } from './highcharts/bubble-charts/bubble-charts.component';
+import { ScatterBubbleComponent } from './highcharts/scatter-bubble/scatter-bubble.component';
+import { ScatterPlotComponent } from './highcharts/scatter-plot/scatter-plot.component';
+import { TimelineComponent } from './highcharts/timeline/timeline.component';
+import { DualLineColumnComponent } from './highcharts/dual-line-column/dual-line-column.component';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +72,19 @@ import { PieChartComponent } from './highcharts/pie-chart/pie-chart.component';
     StackedPercentageColumnComponent,
     DrilldownComponent,
     PieComponent,
-    PieChartComponent
+    PieChartComponent,
+    DonutChartComponent,
+    PieDrilldownComponent,
+    PieLegendComponent,
+    PieGradientComponent,
+    RadiusPieComponent,
+    CirclePieComponent,
+    DonutChartsComponent,
+    BubbleChartsComponent,
+    ScatterBubbleComponent,
+    ScatterPlotComponent,
+    TimelineComponent,
+    DualLineColumnComponent
   ],
   imports: [
     BrowserModule,

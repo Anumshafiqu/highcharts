@@ -26,6 +26,18 @@ import { StackedPercentageColumnComponent } from './highcharts/stacked-percentag
 import { DrilldownComponent } from './highcharts/drilldown/drilldown.component';
 import { PieComponent } from './highcharts/pie/pie.component';
 import { PieChartComponent } from './highcharts/pie-chart/pie-chart.component';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { PieDrilldownComponent } from './pie-drilldown/pie-drilldown.component';
+import { PieLegendComponent } from './pie-legend/pie-legend.component';
+import { PieGradientComponent } from './highcharts/pie-gradient/pie-gradient.component';
+import { RadiusPieComponent } from './highcharts/radius-pie/radius-pie.component';
+import { CirclePieComponent } from './highcharts/circle-pie/circle-pie.component';
+import { DonutChartsComponent } from './highcharts/donut-charts/donut-charts.component';
+import { BubbleChartsComponent } from './highcharts/bubble-charts/bubble-charts.component';
+import { ScatterBubbleComponent } from './highcharts/scatter-bubble/scatter-bubble.component';
+import { ScatterPlotComponent } from './highcharts/scatter-plot/scatter-plot.component';
+import { TimelineComponent } from './highcharts/timeline/timeline.component';
+import { DualLineColumnComponent } from './highcharts/dual-line-column/dual-line-column.component';
 
 const routes: Routes = [
   // {path:'' , component: LinechartComponent},
@@ -51,6 +63,18 @@ const routes: Routes = [
   {path:'stacked-percentage-column' , component: StackedPercentageColumnComponent},
   {path:'drilldown' , component: DrilldownComponent},
   {path:'pie-chart' , component: PieChartComponent},
+  {path:'donut-chart' , component: DonutChartComponent},
+  {path:'pie-drilldown' , component: PieDrilldownComponent},
+  {path:'pie-legend' , component: PieLegendComponent},
+  {path:'pie-gradient' , component: PieGradientComponent},
+  {path:'radius-pie' , component: RadiusPieComponent},
+  {path:'circle-pie' , component: CirclePieComponent},
+  {path:'donut-charts' , component: DonutChartsComponent},
+  {path:'bubble-charts' , component: BubbleChartsComponent},
+  {path:'scatter-bubble' , component: ScatterBubbleComponent},
+  {path:'scatter-plot' , component: ScatterPlotComponent},
+  {path:'timeline' , component: TimelineComponent},
+  {path:'dual-line-column' , component: DualLineColumnComponent},
 ];
 
 @NgModule({
