@@ -43,6 +43,17 @@ import { ScatterBubbleComponent } from './highcharts/scatter-bubble/scatter-bubb
 import { ScatterPlotComponent } from './highcharts/scatter-plot/scatter-plot.component';
 import { TimelineComponent } from './highcharts/timeline/timeline.component';
 import { DualLineColumnComponent } from './highcharts/dual-line-column/dual-line-column.component';
+import { SynchronizedChartsComponent } from './highcharts/synchronized-charts/synchronized-charts.component';
+import { ColumnPieComponent } from './highcharts/column-pie/column-pie.component';
+import { StyledmodeComponent } from './highcharts/styledmode/styledmode.component';
+import { StylePieComponent } from './highcharts/style-pie/style-pie.component';
+import { AccessiblechartsComponent } from './highcharts/accessiblecharts/accessiblecharts.component';
+import { LineStyleComponent } from './highcharts/line-style/line-style.component';
+import { PatternsPieComponent } from './highcharts/patterns-pie/patterns-pie.component';
+import { AudiochartsComponent } from './highcharts/audiocharts/audiocharts.component';
+import { SonificationChartsComponent } from './highcharts/sonification-charts/sonification-charts.component';
+import { SonifiedChartsComponent } from './highcharts/sonified-charts/sonified-charts.component';
+import { DynamicchartsComponent } from './highcharts/dynamiccharts/dynamiccharts.component';
 
 
 @NgModule({
@@ -84,7 +95,18 @@ import { DualLineColumnComponent } from './highcharts/dual-line-column/dual-line
     ScatterBubbleComponent,
     ScatterPlotComponent,
     TimelineComponent,
-    DualLineColumnComponent
+    DualLineColumnComponent,
+    SynchronizedChartsComponent,
+    ColumnPieComponent,
+    StyledmodeComponent,
+    StylePieComponent,
+    AccessiblechartsComponent,
+    LineStyleComponent,
+    PatternsPieComponent,
+    AudiochartsComponent,
+    SonificationChartsComponent,
+    SonifiedChartsComponent,
+    DynamicchartsComponent
   ],
   imports: [
     BrowserModule,

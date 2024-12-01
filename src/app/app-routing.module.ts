@@ -38,6 +38,17 @@ import { ScatterBubbleComponent } from './highcharts/scatter-bubble/scatter-bubb
 import { ScatterPlotComponent } from './highcharts/scatter-plot/scatter-plot.component';
 import { TimelineComponent } from './highcharts/timeline/timeline.component';
 import { DualLineColumnComponent } from './highcharts/dual-line-column/dual-line-column.component';
+import { SynchronizedChartsComponent } from './highcharts/synchronized-charts/synchronized-charts.component';
+import { ColumnPieComponent } from './highcharts/column-pie/column-pie.component';
+import { StyledmodeComponent } from './highcharts/styledmode/styledmode.component';
+import { StylePieComponent } from './highcharts/style-pie/style-pie.component';
+import { AccessiblechartsComponent } from './highcharts/accessiblecharts/accessiblecharts.component';
+import { LineStyleComponent } from './highcharts/line-style/line-style.component';
+import { PatternsPieComponent } from './highcharts/patterns-pie/patterns-pie.component';
+import { AudiochartsComponent } from './highcharts/audiocharts/audiocharts.component';
+import { SonificationChartsComponent } from './highcharts/sonification-charts/sonification-charts.component';
+import { SonifiedChartsComponent } from './highcharts/sonified-charts/sonified-charts.component';
+import { DynamicchartsComponent } from './highcharts/dynamiccharts/dynamiccharts.component';
 
 const routes: Routes = [
   // {path:'' , component: LinechartComponent},
@@ -61,20 +72,32 @@ const routes: Routes = [
   {path:'data-defined' , component: DataDefinedComponent},
   {path:'staked-bar' , component:StakedBarComponent},
   {path:'stacked-percentage-column' , component: StackedPercentageColumnComponent},
-  {path:'drilldown' , component: DrilldownComponent},
-  {path:'pie-chart' , component: PieChartComponent},
-  {path:'donut-chart' , component: DonutChartComponent},
-  {path:'pie-drilldown' , component: PieDrilldownComponent},
-  {path:'pie-legend' , component: PieLegendComponent},
-  {path:'pie-gradient' , component: PieGradientComponent},
-  {path:'radius-pie' , component: RadiusPieComponent},
-  {path:'circle-pie' , component: CirclePieComponent},
-  {path:'donut-charts' , component: DonutChartsComponent},
-  {path:'bubble-charts' , component: BubbleChartsComponent},
-  {path:'scatter-bubble' , component: ScatterBubbleComponent},
-  {path:'scatter-plot' , component: ScatterPlotComponent},
-  {path:'timeline' , component: TimelineComponent},
-  {path:'dual-line-column' , component: DualLineColumnComponent},
+  // {path:'drilldown' , component: DrilldownComponent},
+  // {path:'pie-chart' , component: PieChartComponent},
+  // {path:'donut-chart' , component: DonutChartComponent},
+  // {path:'pie-drilldown' , component: PieDrilldownComponent},
+  // {path:'pie-legend' , component: PieLegendComponent},
+  // {path:'pie-gradient' , component: PieGradientComponent},
+  // {path:'radius-pie' , component: RadiusPieComponent},
+  // {path:'circle-pie' , component: CirclePieComponent},
+  // {path:'donut-charts' , component: DonutChartsComponent},
+  // {path:'bubble-charts' , component: BubbleChartsComponent},
+  // {path:'scatter-bubble' , component: ScatterBubbleComponent},
+  // {path:'scatter-plot' , component: ScatterPlotComponent},
+  // {path:'timeline' , component: TimelineComponent},
+  // {path:'dual-line-column' , component: DualLineColumnComponent},
+  {path:'' , component: SynchronizedChartsComponent},
+  {path:'synchronized-charts' , component: SynchronizedChartsComponent},
+  {path:'column-pie' , component: ColumnPieComponent},
+  {path:'styledmode' , component: StyledmodeComponent},
+  {path:'style-pie' , component: StylePieComponent},
+  {path:'accessiblecharts' , component: AccessiblechartsComponent},
+  {path:'line-style' , component: LineStyleComponent},
+  {path:'patterns-pie' , component: PatternsPieComponent},
+  {path:'audiocharts' , component: AudiochartsComponent},
+  {path:'sonification-charts' , component: SonificationChartsComponent},
+  {path:'sonified-charts' , component: SonifiedChartsComponent},
+  {path:'dynamiccharts' , component: DynamicchartsComponent},
 ];
 
 @NgModule({
