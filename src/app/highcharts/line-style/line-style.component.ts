@@ -8,107 +8,103 @@ import Highcharts from 'highcharts';
   styleUrl: './line-style.component.css'
 })
 export class LineStyleComponent {
-  // const colors = Highcharts.getOptions().colors;
+    Highcharts: typeof Highcharts = Highcharts; // Reference to Highcharts
+    chartOptions: Highcharts.Options = {}; // Chart configuration options
+  
+    constructor() {}
+  
+    ngOnInit(): void {
+      this.chartOptions = {
 
-  Highcharts: typeof Highcharts = Highcharts; // Reference to Highcharts
-  chartOptions: Highcharts.Options = {}; // Chart configuration options
+    chart: {
+        type: 'column'
+    },
 
-  constructor() {}
+    title: {
+        text: 'Born persons, by girls\' name'
+    },
 
-  ngOnInit(): void {
-    this.chartOptions = {
-      chart: {
-          type: 'spline'
-      },
-  
-      legend: {
-          symbolWidth: 40
-      },
-  
-      title: {
-          text: 'Most common desktop screen readers',
-          align: 'left'
-      },
-  
-      subtitle: {
-          text: 'Source: WebAIM. Click on points to visit official screen ' +
-              'reader website',
-          align: 'left'
-      },
-  
-      yAxis: {
-          title: {
-              text: 'Percentage usage'
-          },
-          accessibility: {
-              description: 'Percentage usage'
-          }
-      },
-  
-      xAxis: {
-          title: {
-              text: 'Time',
-              style: {
-                  fontSize: '14px' // Example customization
-              }
-          },
-          accessibility: {
-              description: 'Time from December 2010 to September 2019'
-          },
-          categories: [
-              'December 2010', 'May 2012', 'January 2014', 'July 2015',
-              'October 2017', 'September 2019'
-          ]
-      },
-  
-      tooltip: {
-          valueSuffix: '%',
-          stickOnContact: true
-      },
-  
-      plotOptions: {
-          series: {
-              point: {
-                  events: {
-                      click: function () {
-                          // window.location.href = (this.series.options as CustomSeriesOptions).website!;
-                      }
-                  }
-              },
-              cursor: 'pointer',
-              lineWidth: 2
-          }
-      },
+    subtitle: {
+        text: 'Resize the frame or click buttons to change appearance'
+    },
 
-  
-      responsive: {
-          rules: [{
-              condition: {
-                  maxWidth: 550
-              },
-              chartOptions: {
-                  chart: {
-                      spacingLeft: 3,
-                      spacingRight: 3
-                  },
-                  legend: {
-                      itemWidth: 150
-                  },
-                  xAxis: {
-                      categories: [
-                          'Dec. 2010', 'May 2012', 'Jan. 2014', 'July 2015',
-                          'Oct. 2017', 'Sep. 2019'
-                      ],
-                      title: {
-                          text: '' // Ensure title conforms to `XAxisTitleOptions`
-                      }
-                  },
-                  yAxis: {
-                      visible: false
-                  }
-              }
-          }]
-      }
-  };
-}
+    legend: {
+        align: 'right',
+        verticalAlign: 'middle',
+        layout: 'vertical'
+    },
+
+    xAxis: {
+        categories: ['2021', '2022', '2023'],
+        labels: {
+            x: -10
+        }
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        title: {
+            text: 'Amount'
+        }
+    },
+
+    series: [{
+        type: 'column',
+        name: 'Ava',
+        data: [34, 39, 53]
+    }, {
+        type: 'column',
+        name: 'Dina',
+        data: [27, 21, 22]
+    }, {
+        type: 'column',
+        name: 'Malin',
+        data: [41, 34, 32]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    align: 'center',
+                    verticalAlign: 'bottom',
+                    layout: 'horizontal'
+                },
+                yAxis: {
+                    labels: {
+                        align: 'left',
+                        x: 0,
+                        y: -5
+                    },
+                    title: {
+                        text: null
+                    }
+                },
+                subtitle: {
+                    text: undefined
+                },
+                credits: {
+                    enabled: false
+                }
+            }
+        }]
+    }
+};
+    }
+// document.getElementById('small').addEventListener('click', function () {
+//     chart.setSize(400);
+// });
+
+// document.getElementById('large').addEventListener('click', function () {
+//     chart.setSize(600);
+// });
+
+// document.getElementById('auto').addEventListener('click', function () {
+//     chart.setSize(null);
+// });
+    
+    
 }
