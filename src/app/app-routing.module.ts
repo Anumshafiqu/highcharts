@@ -49,6 +49,21 @@ import { AudiochartsComponent } from './highcharts/audiocharts/audiocharts.compo
 import { SonificationChartsComponent } from './highcharts/sonification-charts/sonification-charts.component';
 import { SonifiedChartsComponent } from './highcharts/sonified-charts/sonified-charts.component';
 import { DynamicchartsComponent } from './highcharts/dynamiccharts/dynamiccharts.component';
+import { GuagechartsComponent } from './highcharts/guagecharts/guagecharts.component';
+import { MultipleKPIgaugeComponent } from './highcharts/multiple-kpigauge/multiple-kpigauge.component';
+import { BulletgrpahComponent } from './highcharts/bulletgrpah/bulletgrpah.component';
+import { HeatmapComponent } from './highcharts/heatmap/heatmap.component';
+import { CalenderHeatmapComponent } from './highcharts/calender-heatmap/calender-heatmap.component';
+import { TreeMapComponent } from './highcharts/tree-map/tree-map.component';
+import { MapInterpolationHeatComponent } from './highcharts/map-interpolation-heat/map-interpolation-heat.component';
+import { InterpolationmapComponent } from './highcharts/interpolationmap/interpolationmap.component';
+import { LargetreemapComponent } from './highcharts/largetreemap/largetreemap.component';
+import { TreegraphComponent } from './highcharts/treegraph/treegraph.component';
+import { SankeyDiagramComponent } from './highcharts/sankey-diagram/sankey-diagram.component';
+import { SunbrustComponent } from './highcharts/sunbrust/sunbrust.component';
+import { ArcdiagramComponent } from './highcharts/arcdiagram/arcdiagram.component';
+import { PolarchartsComponent } from './highcharts/polarcharts/polarcharts.component';
+import { VeuuDiagramComponent } from './highcharts/veuu-diagram/veuu-diagram.component';
 
 const routes: Routes = [
   // {path:'' , component: LinechartComponent},
@@ -61,17 +76,17 @@ const routes: Routes = [
   // {path:'areachart' , component: AreachartComponent},
   // {path:'percentage' , component: PercentageComponent},
   // {path:'stakedarea' , component: StakedareaComponent},
-  {path:'' , component: ArearangeComponent},
-   {path:'arearange' , component: ArearangeComponent},
-  {path:'basic-column' , component: BasicColumnComponent},
-  {path:'bar-race' , component: BarRaceComponent},
-  {path:'column-range' , component: ColumnRangeComponent},
-  {path:'column' , component: ColumnComponent},
-  {path:'fixed-placement' , component: FixedPlacementComponent},
-  {path:'comparison' , component: ComparisonComponent},
-  {path:'data-defined' , component: DataDefinedComponent},
-  {path:'staked-bar' , component:StakedBarComponent},
-  {path:'stacked-percentage-column' , component: StackedPercentageColumnComponent},
+  // {path:'' , component: ArearangeComponent},
+  //  {path:'arearange' , component: ArearangeComponent},
+  // {path:'basic-column' , component: BasicColumnComponent},
+  // {path:'bar-race' , component: BarRaceComponent},
+  // {path:'column-range' , component: ColumnRangeComponent},
+  // {path:'column' , component: ColumnComponent},
+  // {path:'fixed-placement' , component: FixedPlacementComponent},
+  // {path:'comparison' , component: ComparisonComponent},
+  // {path:'data-defined' , component: DataDefinedComponent},
+  // {path:'staked-bar' , component:StakedBarComponent},
+  // {path:'stacked-percentage-column' , component: StackedPercentageColumnComponent},
   // {path:'drilldown' , component: DrilldownComponent},
   // {path:'pie-chart' , component: PieChartComponent},
   // {path:'donut-chart' , component: DonutChartComponent},
@@ -86,18 +101,34 @@ const routes: Routes = [
   // {path:'scatter-plot' , component: ScatterPlotComponent},
   // {path:'timeline' , component: TimelineComponent},
   // {path:'dual-line-column' , component: DualLineColumnComponent},
-  {path:'' , component: SynchronizedChartsComponent},
-  {path:'synchronized-charts' , component: SynchronizedChartsComponent},
-  {path:'column-pie' , component: ColumnPieComponent},
-  {path:'styledmode' , component: StyledmodeComponent},
-  {path:'style-pie' , component: StylePieComponent},
-  {path:'accessiblecharts' , component: AccessiblechartsComponent},
-  {path:'line-style' , component: LineStyleComponent},
-  {path:'patterns-pie' , component: PatternsPieComponent},
-  {path:'audiocharts' , component: AudiochartsComponent},
-  {path:'sonification-charts' , component: SonificationChartsComponent},
-  {path:'sonified-charts' , component: SonifiedChartsComponent},
-  {path:'dynamiccharts' , component: DynamicchartsComponent},
+  // {path:'' , component: SynchronizedChartsComponent},
+  // {path:'synchronized-charts' , component: SynchronizedChartsComponent},
+  // {path:'column-pie' , component: ColumnPieComponent},
+  // {path:'styledmode' , component: StyledmodeComponent},
+  // {path:'style-pie' , component: StylePieComponent},
+  // {path:'accessiblecharts' , component: AccessiblechartsComponent},
+  // {path:'line-style' , component: LineStyleComponent},
+  // {path:'patterns-pie' , component: PatternsPieComponent},
+  // {path:'audiocharts' , component: AudiochartsComponent},
+  // {path:'sonification-charts' , component: SonificationChartsComponent},
+  // {path:'sonified-charts' , component: SonifiedChartsComponent},
+  // {path:'dynamiccharts' , component: DynamicchartsComponent},
+  {path:'' , component: GuagechartsComponent},
+  {path:'guagecharts' , component: GuagechartsComponent},
+  {path:'multiple-kpigauge' , component: MultipleKPIgaugeComponent},
+  {path:'heatmap' , component: HeatmapComponent},
+  {path:'tree-map' , component: TreeMapComponent},
+  {path:'map-interpolation-heat' , component: MapInterpolationHeatComponent},
+  {path:'interpolationmap' , component: InterpolationmapComponent},
+  {path:'treegraph' , component: TreegraphComponent},
+  {path:'sankey-diagram' , component: SankeyDiagramComponent},
+  {path:'sunbrust' , component: SunbrustComponent},
+  {path:'arcdiagram' , component: ArcdiagramComponent},
+  {path:'polarcharts' , component: PolarchartsComponent},
+  {path:'veuu-diagram' , component: VeuuDiagramComponent},
+  
+
+  
 ];
 
 @NgModule({

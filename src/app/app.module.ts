@@ -54,6 +54,26 @@ import { AudiochartsComponent } from './highcharts/audiocharts/audiocharts.compo
 import { SonificationChartsComponent } from './highcharts/sonification-charts/sonification-charts.component';
 import { SonifiedChartsComponent } from './highcharts/sonified-charts/sonified-charts.component';
 import { DynamicchartsComponent } from './highcharts/dynamiccharts/dynamiccharts.component';
+import { GuagechartsComponent } from './highcharts/guagecharts/guagecharts.component';
+import { MultipleKPIgaugeComponent } from './highcharts/multiple-kpigauge/multiple-kpigauge.component';
+import { BulletgrpahComponent } from './highcharts/bulletgrpah/bulletgrpah.component';
+import { HeatmapComponent } from './highcharts/heatmap/heatmap.component';
+import HeatmapModule from 'highcharts/modules/heatmap'; // Import the heatmap module
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CalenderHeatmapComponent } from './highcharts/calender-heatmap/calender-heatmap.component';
+import { TreeMapComponent } from './highcharts/tree-map/tree-map.component';
+import { MapInterpolationHeatComponent } from './highcharts/map-interpolation-heat/map-interpolation-heat.component';
+import { InterpolationmapComponent } from './highcharts/interpolationmap/interpolationmap.component';
+import { LargetreemapComponent } from './highcharts/largetreemap/largetreemap.component';
+import { TreegraphComponent } from './highcharts/treegraph/treegraph.component';
+import { SankeyDiagramComponent } from './highcharts/sankey-diagram/sankey-diagram.component';
+import { SunbrustComponent } from './highcharts/sunbrust/sunbrust.component';
+import { ArcdiagramComponent } from './highcharts/arcdiagram/arcdiagram.component';
+import { PolarchartsComponent } from './highcharts/polarcharts/polarcharts.component';
+import { VeuuDiagramComponent } from './highcharts/veuu-diagram/veuu-diagram.component';
+
+
+
 
 
 @NgModule({
@@ -106,12 +126,33 @@ import { DynamicchartsComponent } from './highcharts/dynamiccharts/dynamiccharts
     AudiochartsComponent,
     SonificationChartsComponent,
     SonifiedChartsComponent,
-    DynamicchartsComponent
+    DynamicchartsComponent,
+    GuagechartsComponent,
+    MultipleKPIgaugeComponent,
+    BulletgrpahComponent,
+    HeatmapComponent,
+    CalenderHeatmapComponent,
+    TreeMapComponent,
+    MapInterpolationHeatComponent,
+    InterpolationmapComponent,
+    LargetreemapComponent,
+    TreegraphComponent,
+    SankeyDiagramComponent,
+    SunbrustComponent,
+    ArcdiagramComponent,
+    PolarchartsComponent,
+    VeuuDiagramComponent,
+
+
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
