@@ -64,6 +64,19 @@ import { SunbrustComponent } from './highcharts/sunbrust/sunbrust.component';
 import { ArcdiagramComponent } from './highcharts/arcdiagram/arcdiagram.component';
 import { PolarchartsComponent } from './highcharts/polarcharts/polarcharts.component';
 import { VeuuDiagramComponent } from './highcharts/veuu-diagram/veuu-diagram.component';
+import { NeuralChartComponent } from './highcharts/neural-chart/neural-chart.component';
+import { DrawinggeneralComponent } from './highcharts/drawinggeneral/drawinggeneral.component';
+import { PictorialchartComponent } from './highcharts/pictorialchart/pictorialchart.component';
+import { PiramidChartComponent } from './highcharts/piramid-chart/piramid-chart.component';
+import { SeriesRangeComponent } from './highcharts/series-range/series-range.component';
+import { ParetochartComponent } from './highcharts/paretochart/paretochart.component';
+import { BarbComponent } from './highcharts/barb/barb.component';
+import { DependencewheelComponent } from './highcharts/dependencewheel/dependencewheel.component';
+import { ParallelComponent } from './highcharts/parallel/parallel.component';
+import { ChartFlameComponent } from './highcharts/chart-flame/chart-flame.component';
+import { RoseWindComponent } from './highcharts/rose-wind/rose-wind.component';
+import { CharttimelineComponent } from './highcharts/charttimeline/charttimeline.component';
+import { FunnelChartComponent } from './highcharts/funnel-chart/funnel-chart.component';
 
 const routes: Routes = [
   // {path:'' , component: LinechartComponent},
@@ -113,19 +126,31 @@ const routes: Routes = [
   // {path:'sonification-charts' , component: SonificationChartsComponent},
   // {path:'sonified-charts' , component: SonifiedChartsComponent},
   // {path:'dynamiccharts' , component: DynamicchartsComponent},
-  {path:'' , component: GuagechartsComponent},
-  {path:'guagecharts' , component: GuagechartsComponent},
-  {path:'multiple-kpigauge' , component: MultipleKPIgaugeComponent},
-  {path:'heatmap' , component: HeatmapComponent},
-  {path:'tree-map' , component: TreeMapComponent},
-  {path:'map-interpolation-heat' , component: MapInterpolationHeatComponent},
-  {path:'interpolationmap' , component: InterpolationmapComponent},
-  {path:'treegraph' , component: TreegraphComponent},
-  {path:'sankey-diagram' , component: SankeyDiagramComponent},
-  {path:'sunbrust' , component: SunbrustComponent},
-  {path:'arcdiagram' , component: ArcdiagramComponent},
-  {path:'polarcharts' , component: PolarchartsComponent},
-  {path:'veuu-diagram' , component: VeuuDiagramComponent},
+  // {path:'' , component: GuagechartsComponent},
+  // {path:'guagecharts' , component: GuagechartsComponent},
+  // {path:'multiple-kpigauge' , component: MultipleKPIgaugeComponent},
+  // {path:'heatmap' , component: HeatmapComponent},
+  // {path:'tree-map' , component: TreeMapComponent},
+  // {path:'map-interpolation-heat' , component: MapInterpolationHeatComponent},
+  // {path:'interpolationmap' , component: InterpolationmapComponent},
+  // {path:'treegraph' , component: TreegraphComponent},
+  // {path:'sankey-diagram' , component: SankeyDiagramComponent},
+  // {path:'sunbrust' , component: SunbrustComponent},
+  // {path:'arcdiagram' , component: ArcdiagramComponent},
+  // {path:'polarcharts' , component: PolarchartsComponent},
+  // {path:'veuu-diagram' , component: VeuuDiagramComponent},
+  {path:'neural-chart' , component: NeuralChartComponent},
+  {path:'drawinggeneral' , component: DrawinggeneralComponent},
+  {path:'pictorialchart' , component: PictorialchartComponent},
+  {path:'series-range' , component: SeriesRangeComponent},
+  {path:'paretochart' , component: ParetochartComponent},
+  {path:'barb' , component: BarbComponent},
+  {path:'dependencewheel' , component: DependencewheelComponent},
+  {path:'parallel' , component: ParallelComponent},
+  {path:'chart-flame' , component: ChartFlameComponent},
+  {path:'rose-wind' , component: RoseWindComponent},
+  {path:'charttimeline' , component: CharttimelineComponent},
+  {path:'funnel-chart' , component: FunnelChartComponent},
   
 
   

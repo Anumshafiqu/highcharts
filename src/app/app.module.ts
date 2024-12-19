@@ -71,6 +71,19 @@ import { SunbrustComponent } from './highcharts/sunbrust/sunbrust.component';
 import { ArcdiagramComponent } from './highcharts/arcdiagram/arcdiagram.component';
 import { PolarchartsComponent } from './highcharts/polarcharts/polarcharts.component';
 import { VeuuDiagramComponent } from './highcharts/veuu-diagram/veuu-diagram.component';
+import { NeuralChartComponent } from './highcharts/neural-chart/neural-chart.component';
+import { DrawinggeneralComponent } from './highcharts/drawinggeneral/drawinggeneral.component';
+import { PictorialchartComponent } from './highcharts/pictorialchart/pictorialchart.component';
+import { PiramidChartComponent } from './highcharts/piramid-chart/piramid-chart.component';
+import { SeriesRangeComponent } from './highcharts/series-range/series-range.component';
+import { ParetochartComponent } from './highcharts/paretochart/paretochart.component';
+import { BarbComponent } from './highcharts/barb/barb.component';
+import { DependencewheelComponent } from './highcharts/dependencewheel/dependencewheel.component';
+import { ParallelComponent } from './highcharts/parallel/parallel.component';
+import { ChartFlameComponent } from './highcharts/chart-flame/chart-flame.component';
+import { RoseWindComponent } from './highcharts/rose-wind/rose-wind.component';
+import { CharttimelineComponent } from './highcharts/charttimeline/charttimeline.component';
+import { FunnelChartComponent } from './highcharts/funnel-chart/funnel-chart.component';
 
 
 
@@ -142,6 +155,19 @@ import { VeuuDiagramComponent } from './highcharts/veuu-diagram/veuu-diagram.com
     ArcdiagramComponent,
     PolarchartsComponent,
     VeuuDiagramComponent,
+    NeuralChartComponent,
+    DrawinggeneralComponent,
+    PictorialchartComponent,
+    PiramidChartComponent,
+    SeriesRangeComponent,
+    ParetochartComponent,
+    BarbComponent,
+    DependencewheelComponent,
+    ParallelComponent,
+    ChartFlameComponent,
+    RoseWindComponent,
+    CharttimelineComponent,
+    FunnelChartComponent,
 
 
     
